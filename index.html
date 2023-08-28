@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Random Password Generator</title>
+</head>
+<body>
+    <main>
+        <article>
+            <div class="password__generator__wrapper">
+                <h2>Password Generator</h2>
+                <div class="password"><span></span> <img src="./image/copy.png" alt="" class="copy__image" ></div>
+                <label for="password__length">Password Length <span class="password__entered__length" style="
+                    padding-left: 4.5em;
+                ">10</span></label>
+                <input type="range" name="" id="password__length">
+                <div class="password__type">
+                    <label for="capital__letter">Include Capital Letters (A-Z)</label>
+                <input type="checkbox" name="" id="capital__letter">
+                <label for="small__letter">Include Small Letters (a-z)</label>
+                <input type="checkbox" name="" id="small__letter">
+                <label for="numbers">Include Numbers (0-9)</label>
+                <input type="checkbox" name="" id="numbers">
+                <label for="symbols">Include Symbols (@-*)</label>
+                <input type="checkbox" name="" id="symbols">
+                </div>
+<button class="generate__btn">Generate Password</button>
+            </div>
+        </article>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>

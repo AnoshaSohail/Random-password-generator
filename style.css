@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: sans-serif;
+  background-color: #80808057;
+}
+h2{
+  font-weight: 600;
+}
+.password__generator__wrapper {
+  display: grid;
+  gap: 1rem;
+  background-color: white;
+  padding: 2em;
+  border-radius: 0.5em;
+}
+input {
+  display: block;
+}
+.password__type input {
+  transform: translateY(-15px) translateX(220px);
+}
+.password {
+  padding: 0.7em;
+  background: #120f0f21;
+  border-radius: 0.3em;
+  position: relative;
+  > img {
+    height: 20px;
+    float: right;
+    cursor: pointer;
+  }
+}
+label[for="password__length"] {
+  font-weight: 600;
+}
+label[for="password__length"] .password__entered__length{
+  font-weight: normal;
+}
+.generate__btn{
+  background: #0075ff;
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0.5em;
+    border: none;
+    border-radius: 0.3em;
+   
+    cursor: pointer;
+}
+.generate__btn:hover{
+  box-shadow: 2px 2px 2px #0765d0;
+}
+
+/* .password::after{
+    content: '';
+    background-image: url(./image/copy.png);
+    height: 20px;
+    width: 100%;
+    background-size: contain;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: 120px 0px;
+    cursor: pointer;
+} */
